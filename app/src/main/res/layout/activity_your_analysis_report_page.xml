@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="337dp"
+        android:layout_height="299dp"
+        android:alpha="0.2"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="RISK ANALYSIS REPORT"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Date : "
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Patient_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Patient Name : "
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Patient_Age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Age : "
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Patient_Height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Height : "
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Patient_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Weight: "
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="* SYMPTOMS ANALYSIS *"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="1.Are you experiencing FREQUENT URINATION ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="2.Are you experiencing an increase in your appetite and thirst ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="3. Are you experiencing frequent tiredness or weakness in body ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="4. Are you experiencing dark patches on your neck or armpits ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="5. Are you experiencing unexpected weight loss ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="6. Are you suffering from blurry vision??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="* FAMILY HISTORY ANALYSIS *"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="7. Did your GRANDFATHER have or had suffered from Type 1 or Type 2 diabetes ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="8. Did your GRANDMOTHER have or had suffered from Type 1 or Type 2 diabetes ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="9. Did your FATHER have or had suffered from Type 1 or Type 2 diabetes ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="10. Did your MOTHER have or had suffered from Type 1 or Type 2 diabetes ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="* TEST REPORT ANALYSIS *"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="11. Have you taken the HBA1C test in past 2-3 months ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="12. Please provide the test result for that : "
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="13. Have you taken the BLOOD SUGAR test in past 2-3 months ??"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="14. Please provide the test result for FASTING BLOOD SUGAR : "
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="15. Please provide the test result for PP BLOOD SUGAR : "
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/Answer15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="italic"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="* RESULT *"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/Conclusion_Result_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:layout_marginTop="15dp"
+                android:textSize="17sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/Conclusion_Result_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:layout_marginTop="15dp"
+                android:textSize="17sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/Conclusion_Result_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:layout_marginTop="15dp"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="50sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
